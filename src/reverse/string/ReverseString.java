@@ -6,6 +6,7 @@ public class ReverseString {
 		ReverseStringMethod1(str);
 		ReverseStringMethod2(str);
 		ReverseStringMethod3(str);
+		System.out.println("Using Recursion = " + ReverseStringMethod4(str));
 	}
 
 	// Here I am Using String simple for loop to Reverse String
@@ -32,6 +33,16 @@ public class ReverseString {
 			System.out.print(value[i]);
 			// IARARDNEPU
 		}
+		System.out.println();
+	}
+
+	// Here I am Using Recursion Method to Reverse String
+	private static String ReverseStringMethod4(String str) {
+		if (str.isEmpty()) {
+			return str;
+		}
+		return str.charAt(str.length() - 1) + ReverseStringMethod4(str.substring(0, str.length() - 1));
+
 	}
 
 }
