@@ -48,7 +48,7 @@ public class ReverseString {
 		System.out.println();
 	}
 
-// Here I am Using Recursion Method to Reverse String
+	// Here I am Using Recursion Method to Reverse String
 	private static String ReverseStringMethod4(String str) {
 		if (str.isEmpty()) {
 			return str;
@@ -56,7 +56,7 @@ public class ReverseString {
 		return str.charAt(str.length() - 1) + ReverseStringMethod4(str.substring(0, str.length() - 1));
 	}
 
-// Using charArray and a single loop to reverse a string
+	// Using charArray and a single loop to reverse a string
 	private static String ReverseStringMethod5(String str) {
 		char[] charArray = str.toCharArray();
 		int left = 0, right = charArray.length - 1;
@@ -70,7 +70,7 @@ public class ReverseString {
 		return new String(charArray);
 	}
 
-// Using recursion to reverse a string (tail recursion for better optimization)
+	// Using recursion to reverse a string (tail recursion for better optimization)
 	private static String ReverseStringMethod6(String str) {
 		return reverseRecursively(str, str.length() - 1);
 	}
