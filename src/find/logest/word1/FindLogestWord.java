@@ -1,4 +1,4 @@
-package find.logest.word;
+package find.logest.word1;
 
 import java.util.Comparator;
 import java.util.List;
