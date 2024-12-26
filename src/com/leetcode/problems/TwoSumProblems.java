@@ -35,7 +35,7 @@ public class TwoSumProblems {
 		}
 		return null;
 	}
-
+//Optimise O(n) 
 	public static int[] twoSum2(int[] nums, int target) {
 		HashMap<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
